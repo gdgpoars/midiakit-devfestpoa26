@@ -26,12 +26,6 @@ export function CtaFinal() {
               {"🚀 Quero investir no maior evento tech do RS"}
             </a>
             <a
-              href="mailto:gdgpoars@gmail.com?subject=Investimento em educação e diversidade - DevFest POA 2026"
-              className="inline-flex items-center justify-center gap-2 no-underline bg-[rgba(52,168,83,0.1)] text-green border border-[rgba(52,168,83,0.3)] rounded-[14px] px-8 py-4 text-[15px] font-bold w-full max-w-[480px] font-sans hover:bg-[rgba(52,168,83,0.18)] hover:-translate-y-0.5 transition-all"
-            >
-              {"💚 Quero investir em fomento da comunidade que investe em educação continuada e diversidade em tech"}
-            </a>
-            <a
               href="mailto:gdgpoars@gmail.com?subject=Fale Conosco - DevFest POA 2026"
               className="inline-flex items-center justify-center gap-2 no-underline bg-transparent text-muted border border-border rounded-[14px] px-8 py-3.5 text-[14px] font-semibold w-full max-w-[480px] font-sans hover:text-text hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5 transition-all"
             >
