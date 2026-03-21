@@ -47,7 +47,7 @@ export function Hero() {
           </div>
           <div className="flex items-center gap-2 text-[14px] text-muted">
             <Users size={16} className="opacity-60" />
-            {"GDG Porto Alegre"}
+            {"GDG Porto Alegre, GDG Caxias do Sul"}
           </div>
         </div>
 
