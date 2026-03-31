@@ -25,35 +25,22 @@ export const metadata: Metadata = {
   description: 'O principal ponto de encontro estrategico da comunidade tech do Sul do Brasil. Midia Kit DevFest Porto Alegre 2026.',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
     ],
     apple: '/apple-icon.png',
   },
-
 }
 
 export const viewport: Viewport = {
-  return (
-    <html lang="pt-BR" className="font-sans antialiased">
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+  width: 'device-width',
+  initialScale: 1,
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
       <body className={`font-sans antialiased ${googleSans.variable} ${googleSansDisplay.variable}`}>
@@ -61,3 +48,5 @@ export const viewport: Viewport = {
         <Analytics />
       </body>
     </html>
+  )
+}

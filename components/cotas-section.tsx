@@ -2,26 +2,37 @@ export function CotasSection() {
   return (
     <section className="bg-dark px-6 py-[100px]" id="cotas">
       <div className="max-w-[1100px] mx-auto">
-        <div className="text-[11px] font-bold tracking-[.1em] uppercase text-blue mb-3">
-          {"Cotas de Investimento"}
-        </div>
-        <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-black leading-[1.1] tracking-[-0.02em] mb-4">
-          {"Escolha como sua empresa"}
-          <br />
-          {"quer fazer história"}
-        </h2>
-        <p className="text-[1.05rem] text-muted max-w-[560px] leading-[1.75]">
-          {"Meta de captação: R$ 20.000 a R$ 25.000. Cada investimento fortalece educação, diversidade e o ecossistema tech do RS."}
-        </p>
 
-        <div className="text-center mt-12 mb-0 text-[12px] font-bold tracking-[.06em] uppercase text-yellow">
-          {"⭐ Mais estratégico"}
+        {/* Header com meta de captação em destaque */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <div className="text-[11px] font-bold tracking-[.1em] uppercase text-blue mb-3">
+              {"Cotas de Investimento"}
+            </div>
+            <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-black leading-[1.1] tracking-[-0.02em]">
+              {"Escolha como sua empresa"}
+              <br />
+              {"quer fazer história"}
+            </h2>
+          </div>
+          <div className="md:text-right shrink-0">
+            <p className="text-[12px] text-muted mb-1">{"Meta de captação"}</p>
+            <p className="font-display text-[1.3rem] font-black text-yellow leading-none">{"R$ 20.000 – R$ 25.000"}</p>
+            <p className="text-[11px] text-muted mt-1.5 max-w-[220px] md:ml-auto leading-[1.6]">
+              {"Cada investimento fortalece educação, diversidade e o ecossistema tech do RS."}
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start">
+
           {/* MASTER */}
-          <div className="rounded-[24px] overflow-hidden border border-yellow shadow-[0_0_0_1px_var(--yellow),0_20px_60px_rgba(251,188,5,0.15)] flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
-            <div className="px-7 pt-7 pb-0 bg-card">
+          <div className="rounded-[24px] overflow-visible border border-yellow shadow-[0_0_0_1px_var(--yellow),0_20px_60px_rgba(251,188,5,0.15)] flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] relative">
+            {/* Badge faixa */}
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-yellow text-[#000] text-[11px] font-bold tracking-[.04em] px-4 py-1 rounded-full whitespace-nowrap z-10">
+              {"⭐ Mais estratégico"}
+            </div>
+            <div className="px-7 pt-9 pb-0 bg-card rounded-t-[24px]">
               <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[.08em] uppercase bg-[rgba(251,188,5,0.15)] text-yellow rounded-full px-3 py-1 mb-4">
                 {"💎 Master"}
               </div>
@@ -30,7 +41,7 @@ export function CotasSection() {
               <div className="font-display text-[2.8rem] font-black leading-none text-yellow mb-1.5">{"R$ 5.000"}</div>
               <div className="h-px bg-border mt-5" />
             </div>
-            <div className="px-7 py-5 pb-7 bg-card flex-1">
+            <div className="px-7 py-5 pb-7 bg-card flex-1 rounded-b-[24px]">
               <div className="flex flex-col gap-2.5">
                 {[
                   '"Powered by [Empresa]" em todas as comunicações',
@@ -55,7 +66,7 @@ export function CotasSection() {
                   </div>
                 ))}
               </div>
-              <a
+              
                 href="mailto:gdgpoars@gmail.com?subject=Cota Master - DevFest POA 2026"
                 className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-yellow text-[#000] hover:bg-[#e6ad00] transition-all font-sans"
               >
@@ -93,7 +104,7 @@ export function CotasSection() {
                   </div>
                 ))}
               </div>
-              <a
+              
                 href="mailto:gdgpoars@gmail.com?subject=Cota Parceiro - DevFest POA 2026"
                 className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-blue text-white hover:bg-[#3574e0] transition-all font-sans"
               >
@@ -127,7 +138,7 @@ export function CotasSection() {
                   </div>
                 ))}
               </div>
-              <a
+              
                 href="mailto:gdgpoars@gmail.com?subject=Cota Colaborador - DevFest POA 2026"
                 className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-[rgba(52,168,83,0.15)] text-green border border-[rgba(52,168,83,0.3)] hover:bg-[rgba(52,168,83,0.25)] transition-all font-sans"
               >
@@ -135,6 +146,7 @@ export function CotasSection() {
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
