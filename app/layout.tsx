@@ -2,23 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-import { GoogleFont, GoogleFontDisplay } from 'next/font/google'
-
-const googleSans = GoogleFont({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-google-sans',
-  display: 'swap',
-  family: 'Google Sans',
-})
-
-const googleSansDisplay = GoogleFontDisplay({
-  subsets: ['latin'],
-  weight: ['700', '900'],
-  variable: '--font-google-sans-display',
-  display: 'swap',
-  family: 'Google Sans Display',
-})
 
 export const metadata: Metadata = {
   title: 'DevFest Porto Alegre 2026 | Midia Kit',
@@ -51,7 +34,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
-      <body className={`font-sans antialiased ${googleSans.variable} ${googleSansDisplay.variable}`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
