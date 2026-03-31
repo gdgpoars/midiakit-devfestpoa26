@@ -6,9 +6,6 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'DevFest Porto Alegre 2026 | Midia Kit',
   description: 'O principal ponto de encontro estrategico da comunidade tech do Sul do Brasil. Midia Kit DevFest POA 2026.',
-  icons: {
-    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌐</text></svg>',
-  },
   openGraph: {
     title: 'DevFest Porto Alegre 2026 | Midia Kit',
     description: 'O principal ponto de encontro estratégico da comunidade tech do Sul do Brasil.',
