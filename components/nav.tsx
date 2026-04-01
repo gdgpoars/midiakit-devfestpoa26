@@ -69,7 +69,7 @@ export function Nav() {
         {/* Desktop links */}
         <div className="hidden md:flex gap-1">
           {links.map(({ href, label }) => (
-            
+            <a
               key={href}
               href={href}
               className={`text-[13px] font-medium px-3 py-1.5 rounded-full no-underline transition-all ${
@@ -85,13 +85,13 @@ export function Nav() {
 
         {/* Desktop CTAs */}
         <div className="hidden md:flex items-center gap-3">
-          
+          <a
             href="#cotas"
             className="text-[13px] font-semibold text-muted border border-white/15 rounded-full px-4 py-2 no-underline hover:text-text hover:border-white/30 transition-all"
           >
             Ver cotas →
           </a>
-          
+          <a
             href="mailto:gdgpoars@gmail.com"
             className="bg-blue text-white border-none rounded-full px-5 py-2 text-[13px] font-semibold no-underline hover:bg-[#3574e0] hover:-translate-y-px transition-all"
           >
@@ -112,7 +112,7 @@ export function Nav() {
         {menuOpen && (
           <div className="absolute top-full left-0 right-0 bg-[rgba(13,13,13,0.97)] backdrop-blur-[20px] border-b border-border flex flex-col gap-2 p-6 md:hidden">
             {links.map(({ href, label }) => (
-              
+              <a
                 key={href}
                 href={href}
                 onClick={() => setMenuOpen(false)}
@@ -126,14 +126,14 @@ export function Nav() {
               </a>
             ))}
             <div className="border-t border-border mt-2 pt-4 flex flex-col gap-3">
-              
+              <a
                 href="#cotas"
                 onClick={() => setMenuOpen(false)}
                 className="text-[13px] font-semibold text-muted border border-white/15 rounded-full px-5 py-2.5 no-underline text-center"
               >
                 Ver cotas →
               </a>
-              
+              <a
                 href="mailto:gdgpoars@gmail.com"
                 className="bg-blue text-white rounded-full px-5 py-2.5 text-[13px] font-semibold no-underline text-center"
               >

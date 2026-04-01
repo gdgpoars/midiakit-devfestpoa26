@@ -62,13 +62,13 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="animate-fade-up animate-delay-6 flex flex-wrap gap-3 justify-center">
-          
+          <a
             href="mailto:gdgpoars@gmail.com?subject=Quero investir no DevFest POA 2026"
             className="inline-flex items-center gap-2 bg-blue text-white border-none rounded-xl px-7 py-3.5 text-[15px] font-bold no-underline font-sans hover:bg-[#3574e0] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(66,133,244,0.35)] transition-all"
           >
             {"Quero investir no maior evento tech do RS →"}
           </a>
-          
+          <a
             href="#cotas"
             className="inline-flex items-center gap-2 bg-transparent text-text border border-border rounded-xl px-7 py-3.5 text-[15px] font-semibold no-underline font-sans hover:bg-[rgba(255,255,255,0.06)] hover:-translate-y-0.5 transition-all"
           >

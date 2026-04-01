@@ -66,7 +66,7 @@ export function CotasSection() {
                   </div>
                 ))}
               </div>
-              
+              <a
                 href="mailto:gdgpoars@gmail.com?subject=Cota Master - DevFest POA 2026"
                 className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-yellow text-[#000] hover:bg-[#e6ad00] transition-all font-sans"
               >
@@ -104,7 +104,7 @@ export function CotasSection() {
                   </div>
                 ))}
               </div>
-              
+              <a
                 href="mailto:gdgpoars@gmail.com?subject=Cota Parceiro - DevFest POA 2026"
                 className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-blue text-white hover:bg-[#3574e0] transition-all font-sans"
               >
@@ -138,7 +138,7 @@ export function CotasSection() {
                   </div>
                 ))}
               </div>
-              
+              <a
                 href="mailto:gdgpoars@gmail.com?subject=Cota Colaborador - DevFest POA 2026"
                 className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-[rgba(52,168,83,0.15)] text-green border border-[rgba(52,168,83,0.3)] hover:bg-[rgba(52,168,83,0.25)] transition-all font-sans"
               >
