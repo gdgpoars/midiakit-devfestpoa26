@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from 'next'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import '@/app/globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://midiakit-devfestpoa26.vercel.app'), // ← isso resolve a OG image
   title: 'DevFest Porto Alegre 2026 | Midia Kit',
   description: 'O principal ponto de encontro estrategico da comunidade tech do Sul do Brasil. Midia Kit DevFest POA 2026.',
   openGraph: {
