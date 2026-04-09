@@ -47,7 +47,7 @@ export function Hero() {
           </div>
           <div className="flex items-center gap-2 text-[14px] text-muted">
             <Users size={16} className="opacity-60" />
-            {"GDG Porto Alegre"}
+            {"GDG Porto Alegre, GDG Caxias do Sul"}
           </div>
         </div>
 
@@ -74,6 +74,14 @@ export function Hero() {
           >
             {"Ver cotas de investimento"}
           </a>
+        </div>
+
+        {/* Scroll cue */}
+        <div className="mt-16 flex flex-col items-center gap-2 text-[11px] font-semibold tracking-[.06em] uppercase text-muted/50 animate-bounce">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          </svg>
+          Scroll
         </div>
       </div>
     </div>

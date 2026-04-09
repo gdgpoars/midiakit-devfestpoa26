@@ -1,7 +1,8 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import 'tw-animate-css';
-
-@custom-variant dark (&:is(.dark *));
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Display:wght@700;900&display=swap');
 
 :root {
   --blue: #4285F4;
@@ -21,35 +22,37 @@
   --radius: 0.625rem;
 }
 
-@theme inline {
-  --font-sans: 'Google Sans', sans-serif;
-  --font-display: 'Google Sans Display', sans-serif;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-border: var(--border);
-  --color-blue: var(--blue);
-  --color-red: var(--red);
-  --color-yellow: var(--yellow);
-  --color-green: var(--green);
-  --color-dark: var(--dark);
-  --color-dark2: var(--dark2);
-  --color-dark3: var(--dark3);
-  --color-card: var(--card);
-  --color-text: var(--text);
-  --color-muted: var(--muted);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+@layer theme {
+  :root {
+    --font-sans: 'Google Sans', sans-serif;
+    --font-display: 'Google Sans Display', sans-serif;
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-border: var(--border);
+    --color-blue: var(--blue);
+    --color-red: var(--red);
+    --color-yellow: var(--yellow);
+    --color-green: var(--green);
+    --color-dark: var(--dark);
+    --color-dark2: var(--dark2);
+    --color-dark3: var(--dark3);
+    --color-card: var(--card);
+    --color-text: var(--text);
+    --color-muted: var(--muted);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+  }
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 @layer base {
   * {
-    @apply border-border;
     box-sizing: border-box;
     margin: 0;
     padding: 0;

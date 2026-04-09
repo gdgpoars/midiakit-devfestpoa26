@@ -9,10 +9,10 @@ export function Footer() {
         <span className="text-text">{" 2026"}</span>
       </div>
       <div className="text-[13px] text-muted leading-[1.7]">
-        {"Realização: GDG Porto Alegre · Porto Alegre, RS · Final de Outubro de 2026"}
+        {"Realização: GDG Porto Alegre & GDG Caxias do Sul · Porto Alegre, RS · Final de Outubro de 2026"}
       </div>
       <div className="mt-2 text-[12px] text-[rgba(255,255,255,0.3)]">
-        {"Uma iniciativa das comunidades Google Developer Groups · Evento voluntário e sem fins lucrativos"}
+        {"Uma iniciativa das comunidades Google Developer Groups ao redor do mundo · Evento voluntário e sem fins lucrativos"}
       </div>
     </footer>
   )
