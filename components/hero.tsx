@@ -43,7 +43,7 @@ export function Hero() {
           </div>
           <div className="flex items-center gap-2 text-[14px] text-muted">
             <Calendar size={16} className="opacity-60" />
-            {"Final de Outubro de 2026"}
+            {"Data secreta, a revelar"}
           </div>
           <div className="flex items-center gap-2 text-[14px] text-muted">
             <Users size={16} className="opacity-60" />
