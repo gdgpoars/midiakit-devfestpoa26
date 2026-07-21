@@ -38,7 +38,7 @@ export function CotasSection() {
               </div>
               <div className="font-display text-[1.4rem] font-black mb-1">{"Investimento Master"}</div>
               <div className="text-[12px] text-muted mb-5">{"Apenas 2 empresas · Selo \"Powered by\""}</div>
-              <div className="font-display text-[2.8rem] font-black leading-none text-yellow mb-1.5">{"R$4.500"}</div>
+              <div className="font-display text-[2.8rem] font-black leading-none text-yellow mb-1.5">{"R$ 4.500"}</div>
               <div className="h-px bg-border mt-5" />
             </div>
             <div className="px-7 py-5 pb-7 bg-card flex-1 rounded-b-[24px]">
