@@ -51,7 +51,7 @@ export function ComparativoSection() {
                 <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-yellow">
                   {"💎 Master"}
                   <br />
-                  <small>{"R$ 5.000"}</small>
+                  <small>{"R$ 4.500"}</small>
                 </th>
                 <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-blue">
                   {"🥈 Parceiro"}
