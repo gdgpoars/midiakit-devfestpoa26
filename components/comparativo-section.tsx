@@ -3,15 +3,15 @@ export function ComparativoSection() {
     { label: "Vagas disponíveis", master: "2 empresas", parceiro: "3 empresas", colaborador: "6 empresas", highlight: true },
     { label: "Ingressos", master: "10", parceiro: "5", colaborador: "2" },
     { label: "Logo no site oficial", master: "check-y", parceiro: "check-b", colaborador: "check-g" },
-    { label: "Logo em materiais físicos", master: "✔ Destaque máximo", parceiro: "✔ Secundário", colaborador: "✔ Slide coletivo", masterClass: "text-yellow", parceiroClass: "text-blue", colaboradorClass: "text-green" },
-    { label: "Menção no palco", master: "✔ Nominal", parceiro: "✔ Nominal", colaborador: "✔ Coletivo", masterClass: "text-yellow", parceiroClass: "text-blue", colaboradorClass: "text-green" },
-    { label: "Fala no evento", master: "✔ 2+2 min", parceiro: "dash", colaborador: "dash", masterClass: "text-yellow" },
-    { label: "Espaço de ativação", master: "✔ Principal", parceiro: "dash", colaborador: "dash", masterClass: "text-yellow" },
+    { label: "Logo em materiais físicos", master: "✔ Destaque máximo", parceiro: "✔ Secundário", colaborador: "✔ Slide coletivo", masterClass: "text-muted", parceiroClass: "text-blue", colaboradorClass: "text-green" },
+    { label: "Menção no palco", master: "✔ Nominal", parceiro: "✔ Nominal", colaborador: "✔ Coletivo", masterClass: "text-muted", parceiroClass: "text-blue", colaboradorClass: "text-green" },
+    { label: "Fala no evento", master: "✔ 2+2 min", parceiro: "dash", colaborador: "dash", masterClass: "text-muted" },
+    { label: "Espaço de ativação", master: "✔ Principal", parceiro: "dash", colaborador: "dash", masterClass: "text-muted" },
     { label: "Post exclusivo nas redes", master: "check-y", parceiro: "dash", colaborador: "dash" },
     { label: "Divulgação nas redes sociais", master: "check-y", parceiro: "✔ Coletivo", colaborador: "✔ Coletivo", parceiroClass: "text-blue", colaboradorClass: "text-green" },
     { label: "Mailing do evento (opt-in)", master: "check-y", parceiro: "check-b", colaborador: "dash" },
     { label: "Lista segmentada de participantes", master: "check-y", parceiro: "dash", colaborador: "dash" },
-    { label: "Perguntas no formulário de inscrição", master: "✔ até 2", parceiro: "dash", colaborador: "dash", masterClass: "text-yellow" },
+    { label: "Perguntas no formulário de inscrição", master: "✔ até 2", parceiro: "dash", colaborador: "dash", masterClass: "text-muted" },
     { label: "Networking estruturado", master: "check-y", parceiro: "dash", colaborador: "dash" },
     { label: "Mural de oportunidades", master: "check-y", parceiro: "dash", colaborador: "dash" },
     { label: "Distribuição de brindes", master: "check-y", parceiro: "check-b", colaborador: "dash" },
@@ -22,7 +22,7 @@ export function ComparativoSection() {
   ]
 
   function renderCell(value: string, colorClass?: string) {
-    if (value === "check-y") return <span className="text-yellow text-[16px]">{"✔"}</span>
+    if (value === "check-y") return <span className="text-muted text-[16px]">{"✔"}</span>
     if (value === "check-b") return <span className="text-blue text-[16px]">{"✔"}</span>
     if (value === "check-g") return <span className="text-green text-[16px]">{"✔"}</span>
     if (value === "dash") return <span className="text-[rgba(255,255,255,0.2)]">{"—"}</span>
@@ -48,10 +48,14 @@ export function ComparativoSection() {
                 <th className="p-4 px-5 text-left text-[13px] font-bold border-b border-border w-[40%]">
                   {"Benefício"}
                 </th>
-                <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-yellow">
+                <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-muted">
                   {"💎 Master"}
                   <br />
                   <small>{"R$ 4.500"}</small>
+                  <br />
+                  <span className="inline-block mt-1 bg-red text-white text-[10px] font-bold tracking-[.04em] px-2 py-0.5 rounded-full">
+                    {"ESGOTADA"}
+                  </span>
                 </th>
                 <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-blue">
                   {"🥈 Parceiro"}
@@ -74,7 +78,7 @@ export function ComparativoSection() {
                   <td className={`px-5 py-3.5 text-[13px] text-text font-medium border-b border-border text-left ${i === rows.length - 1 ? "border-b-0" : ""}`}>
                     {row.label}
                   </td>
-                  <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border ${i === rows.length - 1 ? "border-b-0" : ""}`}>
+                  <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border opacity-50 ${i === rows.length - 1 ? "border-b-0" : ""}`}>
                     {renderCell(row.master, row.masterClass)}
                   </td>
                   <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border ${i === rows.length - 1 ? "border-b-0" : ""}`}>

@@ -26,22 +26,22 @@ export function CotasSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start">
 
-          {/* MASTER */}
-          <div className="rounded-[24px] overflow-visible border border-yellow shadow-[0_0_0_1px_var(--yellow),0_20px_60px_rgba(251,188,5,0.15)] flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] relative">
+          {/* MASTER — ESGOTADA */}
+          <div className="rounded-[24px] overflow-visible border border-border flex flex-col transition-all duration-300 relative">
             {/* Badge faixa */}
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-yellow text-[#000] text-[11px] font-bold tracking-[.04em] px-4 py-1 rounded-full whitespace-nowrap z-10">
-              {"⭐ Mais estratégico"}
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-red text-white text-[11px] font-bold tracking-[.04em] px-4 py-1 rounded-full whitespace-nowrap z-10 flex items-center gap-1">
+              {"🔒 Esgotada"}
             </div>
-            <div className="px-7 pt-9 pb-0 bg-card rounded-t-[24px]">
-              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[.08em] uppercase bg-[rgba(251,188,5,0.15)] text-yellow rounded-full px-3 py-1 mb-4">
+            <div className="px-7 pt-9 pb-0 bg-card rounded-t-[24px] opacity-50">
+              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[.08em] uppercase bg-[rgba(255,255,255,0.06)] text-muted rounded-full px-3 py-1 mb-4">
                 {"💎 Master"}
               </div>
               <div className="font-display text-[1.4rem] font-black mb-1">{"Investimento Master"}</div>
-              <div className="text-[12px] text-muted mb-5">{"Apenas 2 empresas · Selo \"Powered by\""}</div>
-              <div className="font-display text-[2.8rem] font-black leading-none text-yellow mb-1.5">{"R$ 4.500"}</div>
+              <div className="text-[12px] text-muted mb-5">{"2 empresas · Selo \"Powered by\""}</div>
+              <div className="font-display text-[2.8rem] font-black leading-none text-muted mb-1.5">{"R$ 4.500"}</div>
               <div className="h-px bg-border mt-5" />
             </div>
-            <div className="px-7 py-5 pb-7 bg-card flex-1 rounded-b-[24px]">
+            <div className="px-7 py-5 pb-7 bg-card flex-1 rounded-b-[24px] opacity-50">
               <div className="flex flex-col gap-2.5">
                 {[
                   '"Powered by [Empresa]" em todas as comunicações',
@@ -61,17 +61,14 @@ export function CotasSection() {
                   "Prioridade de renovação para 2027",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2.5 text-[13px] text-muted leading-[1.5]">
-                    <span className="text-yellow font-bold shrink-0 mt-px">{"✔"}</span>
+                    <span className="text-muted font-bold shrink-0 mt-px">{"✔"}</span>
                     {item}
                   </div>
                 ))}
               </div>
-              <a
-                href="mailto:gdgpoars@gmail.com?subject=Cota Master - DevFest POA 2026"
-                className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-yellow text-[#000] hover:bg-[#e6ad00] transition-all font-sans"
-              >
-                {"Quero ser Master →"}
-              </a>
+              <div className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold mt-5 bg-[rgba(255,255,255,0.06)] text-muted border border-border font-sans cursor-not-allowed">
+                {"Cota esgotada — obrigado! 🙌"}
+              </div>
             </div>
           </div>
 
