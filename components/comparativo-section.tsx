@@ -1,12 +1,12 @@
 export function ComparativoSection() {
   const rows = [
-    { label: "Vagas disponíveis", master: "2 empresas", parceiro: "3 empresas", colaborador: "6 empresas", highlight: true },
+    { label: "Vagas disponíveis", master: "2 empresas", parceiro: "6 empresas", colaborador: "3 empresas", highlight: true },
     { label: "Ingressos", master: "10", parceiro: "5", colaborador: "2" },
     { label: "Logo no site oficial", master: "check-y", parceiro: "check-b", colaborador: "check-g" },
     { label: "Logo em materiais físicos", master: "✔ Destaque máximo", parceiro: "✔ Secundário", colaborador: "✔ Slide coletivo", masterClass: "text-muted", parceiroClass: "text-blue", colaboradorClass: "text-green" },
     { label: "Menção no palco", master: "✔ Nominal", parceiro: "✔ Nominal", colaborador: "✔ Coletivo", masterClass: "text-muted", parceiroClass: "text-blue", colaboradorClass: "text-green" },
     { label: "Fala no evento", master: "✔ 2+2 min", parceiro: "dash", colaborador: "dash", masterClass: "text-muted" },
-    { label: "Espaço de ativação", master: "✔ Principal", parceiro: "dash", colaborador: "dash", masterClass: "text-muted" },
+    { label: "Espaço de ativação", master: "✔ Principal", parceiro: "✔ Mediante negociação", colaborador: "dash", masterClass: "text-muted", parceiroClass: "text-blue" },
     { label: "Post exclusivo nas redes", master: "check-y", parceiro: "dash", colaborador: "dash" },
     { label: "Divulgação nas redes sociais", master: "check-y", parceiro: "✔ Coletivo", colaborador: "✔ Coletivo", parceiroClass: "text-blue", colaboradorClass: "text-green" },
     { label: "Mailing do evento (opt-in)", master: "check-y", parceiro: "check-b", colaborador: "dash" },

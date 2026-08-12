@@ -17,7 +17,7 @@ export function CotasSection() {
           </div>
           <div className="md:text-right shrink-0">
             <p className="text-[12px] text-muted mb-1">{"Meta de captação"}</p>
-            <p className="font-display text-[1.3rem] font-black text-yellow leading-none">{"R$ 20.000"}</p>
+            <p className="font-display text-[1.3rem] font-black text-yellow leading-none">{"R$ 25.000"}</p>
             <p className="text-[11px] text-muted mt-1.5 max-w-[220px] md:ml-auto leading-[1.6]">
               {"Cada investimento fortalece educação, diversidade e o ecossistema tech do RS."}
             </p>
@@ -79,7 +79,7 @@ export function CotasSection() {
                 {"🥈 Parceiro"}
               </div>
               <div className="font-display text-[1.4rem] font-black mb-1">{"Investimento Parceiro"}</div>
-              <div className="text-[12px] text-muted mb-5">{"Até 3 empresas"}</div>
+              <div className="text-[12px] text-muted mb-5">{"Até 6 empresas"}</div>
               <div className="font-display text-[2.8rem] font-black leading-none text-blue mb-1.5">{"R$ 2.000"}</div>
               <div className="h-px bg-border mt-5" />
             </div>
@@ -94,6 +94,7 @@ export function CotasSection() {
                   "Mailing do evento (LGPD + opt-in)",
                   "Inserção da logo em email marketing oficial",
                   "Distribuição de brindes institucionais",
+                  "Possibilidade de espaço de ativação mediante negociação com a organização",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2.5 text-[13px] text-muted leading-[1.5]">
                     <span className="text-blue font-bold shrink-0 mt-px">{"✔"}</span>
@@ -117,7 +118,7 @@ export function CotasSection() {
                 {"🟢 Colaborador"}
               </div>
               <div className="font-display text-[1.4rem] font-black mb-1">{"Investimento Colaborador"}</div>
-              <div className="text-[12px] text-muted mb-5">{"Até 6 empresas"}</div>
+              <div className="text-[12px] text-muted mb-5">{"Até 3 empresas"}</div>
               <div className="font-display text-[2.8rem] font-black leading-none text-green mb-1.5">{"R$ 1.000"}</div>
               <div className="h-px bg-border mt-5" />
             </div>
