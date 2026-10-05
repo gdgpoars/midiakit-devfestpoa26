@@ -1,7 +1,7 @@
 export function ComparativoSection() {
   const rows = [
     { label: "Vagas disponíveis", master: "2 empresas", parceiro: "6 empresas", colaborador: "3 empresas", highlight: true },
-    { label: "Ingressos", master: "10", parceiro: "5", colaborador: "2" },
+    { label: "Ingressos", master: "10", parceiro: "5", colaborador: "3" },
     { label: "Logo no site oficial", master: "check-y", parceiro: "check-b", colaborador: "check-g" },
     { label: "Logo em materiais físicos", master: "✔ Destaque máximo", parceiro: "✔ Secundário", colaborador: "✔ Slide coletivo", masterClass: "text-muted", parceiroClass: "text-blue", colaboradorClass: "text-green" },
     { label: "Menção no palco", master: "✔ Nominal", parceiro: "✔ Nominal", colaborador: "✔ Coletivo", masterClass: "text-muted", parceiroClass: "text-blue", colaboradorClass: "text-green" },
@@ -13,8 +13,8 @@ export function ComparativoSection() {
     { label: "Lista segmentada de participantes", master: "check-y", parceiro: "dash", colaborador: "dash" },
     { label: "Perguntas no formulário de inscrição", master: "✔ até 2", parceiro: "dash", colaborador: "dash", masterClass: "text-muted" },
     { label: "Networking estruturado", master: "check-y", parceiro: "dash", colaborador: "dash" },
-    { label: "Mural de oportunidades", master: "check-y", parceiro: "dash", colaborador: "dash" },
-    { label: "Distribuição de brindes", master: "check-y", parceiro: "check-b", colaborador: "dash" },
+    { label: "Mural de oportunidades", master: "check-y", parceiro: "dash", colaborador: "check-g" },
+    { label: "Distribuição de brindes", master: "check-y", parceiro: "check-b", colaborador: "✔ No estande da comunidade*", colaboradorClass: "text-green" },
     { label: "Relatório pós-evento", master: "check-y", parceiro: "dash", colaborador: "dash" },
     { label: "Email marketing oficial", master: "check-y", parceiro: "check-b", colaborador: "dash" },
     { label: "Prioridade de renovação 2027", master: "check-y", parceiro: "dash", colaborador: "dash", highlight: true },
@@ -57,10 +57,14 @@ export function ComparativoSection() {
                     {"ESGOTADA"}
                   </span>
                 </th>
-                <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-blue">
+                <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-muted">
                   {"🥈 Parceiro"}
                   <br />
                   <small>{"R$ 2.000"}</small>
+                  <br />
+                  <span className="inline-block mt-1 bg-red text-white text-[10px] font-bold tracking-[.04em] px-2 py-0.5 rounded-full">
+                    {"ESGOTADA"}
+                  </span>
                 </th>
                 <th className="p-4 px-5 text-center text-[13px] font-bold border-b border-border text-green">
                   {"🟢 Colaborador"}
@@ -81,7 +85,7 @@ export function ComparativoSection() {
                   <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border opacity-50 ${i === rows.length - 1 ? "border-b-0" : ""}`}>
                     {renderCell(row.master, row.masterClass)}
                   </td>
-                  <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border ${i === rows.length - 1 ? "border-b-0" : ""}`}>
+                  <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border opacity-50 ${i === rows.length - 1 ? "border-b-0" : ""}`}>
                     {renderCell(row.parceiro, row.parceiroClass)}
                   </td>
                   <td className={`px-5 py-3.5 text-[13px] text-muted text-center align-middle border-b border-border ${i === rows.length - 1 ? "border-b-0" : ""}`}>

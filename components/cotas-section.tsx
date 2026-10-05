@@ -72,18 +72,22 @@ export function CotasSection() {
             </div>
           </div>
 
-          {/* PARCEIRO */}
-          <div className="rounded-[24px] overflow-hidden border border-border flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
-            <div className="px-7 pt-7 pb-0 bg-card">
-              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[.08em] uppercase bg-[rgba(66,133,244,0.15)] text-blue rounded-full px-3 py-1 mb-4">
+          {/* PARCEIRO — ESGOTADA */}
+          <div className="rounded-[24px] overflow-visible border border-border flex flex-col transition-all duration-300 relative">
+            {/* Badge faixa */}
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-red text-white text-[11px] font-bold tracking-[.04em] px-4 py-1 rounded-full whitespace-nowrap z-10 flex items-center gap-1">
+              {"🔒 Esgotada"}
+            </div>
+            <div className="px-7 pt-9 pb-0 bg-card rounded-t-[24px] opacity-50">
+              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[.08em] uppercase bg-[rgba(255,255,255,0.06)] text-muted rounded-full px-3 py-1 mb-4">
                 {"🥈 Parceiro"}
               </div>
               <div className="font-display text-[1.4rem] font-black mb-1">{"Investimento Parceiro"}</div>
               <div className="text-[12px] text-muted mb-5">{"Até 6 empresas"}</div>
-              <div className="font-display text-[2.8rem] font-black leading-none text-blue mb-1.5">{"R$ 2.000"}</div>
+              <div className="font-display text-[2.8rem] font-black leading-none text-muted mb-1.5">{"R$ 2.000"}</div>
               <div className="h-px bg-border mt-5" />
             </div>
-            <div className="px-7 py-5 pb-7 bg-card flex-1">
+            <div className="px-7 py-5 pb-7 bg-card flex-1 rounded-b-[24px] opacity-50">
               <div className="flex flex-col gap-2.5">
                 {[
                   "Marca em destaque secundário: site, redes e materiais",
@@ -97,17 +101,14 @@ export function CotasSection() {
                   "Possibilidade de espaço de ativação mediante negociação com a organização",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2.5 text-[13px] text-muted leading-[1.5]">
-                    <span className="text-blue font-bold shrink-0 mt-px">{"✔"}</span>
+                    <span className="text-muted font-bold shrink-0 mt-px">{"✔"}</span>
                     {item}
                   </div>
                 ))}
               </div>
-              <a
-                href="mailto:gdgpoars@gmail.com?subject=Cota Parceiro - DevFest POA 2026"
-                className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold no-underline mt-5 bg-blue text-white hover:bg-[#3574e0] transition-all font-sans"
-              >
-                {"Quero ser Parceiro →"}
-              </a>
+              <div className="block w-full text-center py-3.5 rounded-xl text-[14px] font-bold mt-5 bg-[rgba(255,255,255,0.06)] text-muted border border-border font-sans cursor-not-allowed">
+                {"Cota esgotada — obrigado! 🙌"}
+              </div>
             </div>
           </div>
 
@@ -127,8 +128,11 @@ export function CotasSection() {
                 {[
                   "Logo no site oficial",
                   "Logo em slide coletivo exibido durante o evento",
-                  "2 ingressos",
+                  "3 ingressos",
                   "Menção coletiva nas redes sociais",
+                  "Menção coletiva no palco",
+                  "Inclusão no mural de oportunidades",
+                  "Inserção de material/brinde institucional no espaço/estande da comunidade*",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2.5 text-[13px] text-muted leading-[1.5]">
                     <span className="text-green font-bold shrink-0 mt-px">{"✔"}</span>

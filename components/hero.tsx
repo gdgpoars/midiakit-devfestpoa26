@@ -57,7 +57,7 @@ export function Hero() {
             {
               icon: Users,
               label: "Público esperado",
-              value: "300 pessoas",
+              value: "500 pessoas",
               textColor: "#FBBC05",
               bg: "rgba(251,188,5,0.10)",
               border: "rgba(251,188,5,0.35)",
